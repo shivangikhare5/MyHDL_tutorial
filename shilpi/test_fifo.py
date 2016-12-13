@@ -21,7 +21,7 @@ class TestFifo(TestCase):
             din, dout = [Signal(intbv(0)[DATA:]) for i in range(2)]
 
             fifo_inst = fifo(clk, we, rd, din, dout, rdout, outbusy,  inbusy, DATA=DATA, ADDRESS=ADDR, DEPTH=DEPTH)
-            # fifo_inst.convert(hdl='Verilog', name='fifo_' + str(ADDR)+'_'+ str(DATA)+'_' + str(DEPTH))
+            fifo_inst.convert(hdl='Verilog', name='fifo_' + str(ADDR)+ '_' + str(DATA)+ '_' + str(DEPTH))
 
             @always(delay(8))
             def clkgen():

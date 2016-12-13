@@ -27,7 +27,7 @@ def fifo(clk, wenable, renable, din, dout, rdout, outbusy, inbusy, DATA=DATA, AD
     @always(clk.posedge)
     def read_data():
         if renable:
-            dout.next = mem[out_addr[ADDRESS:]].val
+            dout.next = mem[out_addr[ADDRESS:]] 
             out_addr.next = out_addr + modbv(1)[ADDRESS:]
             rdout.next = renable
         else:
