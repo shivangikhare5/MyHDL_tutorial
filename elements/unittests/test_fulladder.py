@@ -47,7 +47,7 @@ class TestFullAdder(TestCase):
             a, b, s = [Signal(modbv(0)[DATA:]) for i in range(3)]
             cin, cout = [Signal(bool(0)) for i in range(2)]
             clk = Signal(bool(0))
-            addr_inst = fulladder.bit_adder_vec(a, b, cin, s, cout)
+            addr_inst = fulladder.bit_adder_vec(a, b, cin, s, cout, DATA=DATA)
             
             @always(delay(10))
             def clkgen():
@@ -64,9 +64,8 @@ class TestFullAdder(TestCase):
                     a.next = randrange(2**DATA)
                     b.next = randrange(2**DATA)
                     cin.next = randrange(2)
-                    #self.assertEqual(s+ (cout << DATA), a ^ b ^ cin)
-                    #self.assertEqual(cout, (a & b) | ((a ^ b) & cin))
-                    print(int(a), int(b), int(cin), int(s), int(cout), int(s+ (cout << (DATA-1))))
+                    self.assertEqual(int(s+ (cout << DATA)), int(a + b + cin))
+                    print(int(a), int(b), int(cin), int(s), int(cout), int(s+ (cout << (DATA))))
             return instances()        
         
         tb = testbenchAdderVec()
