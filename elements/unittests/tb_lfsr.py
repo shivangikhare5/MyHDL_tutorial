@@ -18,6 +18,8 @@ class TestLFSR(TestCase):
 			
 			tbfsr = fsr(bit,lfsr,clk)
 			
+			tbfsr.convert(hdl='Verilog',name='LFSR')
+			
 			@always(delay(10))
 			def clkgen():
 				clk.next = not clk
@@ -29,10 +31,13 @@ class TestLFSR(TestCase):
 				
 			@instance
 			def tfsr():
+				print(lfsr)
 				while lfsr!=seed or f==0:
 					yield clk.posedge
-					print(lfsr)
-					self.assertEqual(bit ,((lfsr >> 0) ^ (lfsr >> 2) ^ (lfsr >> 3) ^ (lfsr >> 5) ) & 1)
+					self.assertEqual(bit ,(lfsr[0] ^ lfsr[2] ^ lfsr[3] ^ lfsr[5] ) & 1)
+					print((lfsr >> 1) | (bit << 15),end='')
+					yield delay(1)
+					print("\t%s"%lfsr)
 	
 			return tfsr,clkgen,tbfsr
 			
