@@ -1,7 +1,9 @@
-from myhdl import block,always_comb,always,delay,intbv,instance,Signal,now
+from myhdl import block,always_comb,always,delay,intbv,instance,Signal,now,ResetSignal
 import unittest
 from unittest import TestCase
 from lfsr import fsr
+import random
+from random import randrange
 
 class TestLFSR(TestCase):
 
@@ -13,16 +15,25 @@ class TestLFSR(TestCase):
 			clk = Signal(bool(0))
 			f = Signal(bool(0))
 			bit = Signal(intbv(0)[16:])
+			rst = ResetSignal(0,active = 0,async = True)
 			seed = Signal(intbv(0xACE1)[16:])
-			lfsr = seed
+			lfsr = Signal(intbv(0)[16:])
+			load = Signal(bool(1))
 			
-			tbfsr = fsr(bit,lfsr,clk)
+			tbfsr = fsr(bit,lfsr,load,clk,rst)
 			
 			tbfsr.convert(hdl='Verilog',name='LFSR')
 			
 			@always(delay(10))
 			def clkgen():
 				clk.next = not clk
+				
+				
+			@instance
+			def stimulus():
+				rst.next =  0
+				yield clk.negedge	
+				rst.next = 1
 				
 			@always_comb
 			def stp():
@@ -31,6 +42,9 @@ class TestLFSR(TestCase):
 				
 			@instance
 			def tfsr():
+				yield rst.posedge
+				yield delay(2)
+				load.next = 0
 				print(lfsr)
 				while lfsr!=seed or f==0:
 					yield clk.posedge
@@ -39,11 +53,12 @@ class TestLFSR(TestCase):
 					yield delay(1)
 					print("\t%s"%lfsr)
 	
-			return tfsr,clkgen,tbfsr
+			return tfsr,clkgen,tbfsr,stimulus
 			
 		tb = testbench()
 		tb.config_sim(trace=True)
-		tb.run_sim(duration=500)
+		tb.run_sim(duration=100)
 		tb.quit_sim()
+		
 if __name__ == '__main__':
     unittest.main()
