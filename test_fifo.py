@@ -1,102 +1,113 @@
+#test bench for fifo
 from unittest import TestCase
 import unittest
-from myhdl import block, instances, Signal, modbv, ResetSignal, intbv, always, delay, instance
-from fifo import fifo
+from myhdl import *
+import random
 from random import randrange
+import fifo
+from fifo import fifo
+ADDR = 4
+DATA = 8
+LOWER = 0
+UPPER = 2**ADDR
 
-class TestFifo(TestCase):
+class Testfifo(TestCase):
     
-    def testFifoBuffer(self):
-        """ Check that fifo can be write and read """
-        ADDR = 4
-        DATA = 16
-        OFFSET = 8
-        LOWER = 4
-        UPPER =2**ADDR-4
-        WATCHDOG = 3000
+    def testReadWrite(self):
+        """ Check that buffer can be write and read """
+        
+        #Creating buffer (random data)
         def createbuff(DATA, ADDR):
-            return [Signal(intbv(randrange(2**DATA))) for i in range(2**4)]
-     
+            return [Signal(modbv(randrange(2**DATA))) for i in range(2**ADDR)]
+        
+        
         @block
-        def tb_fifo(): 
-            clk = Signal(bool(0))
-            rst = ResetSignal(0, active=1, async=False)
+        def test_fifo():
+                     
+            din, dout          = [Signal(modbv(0)[DATA:]) for i in range(2)]
             
-            we, rd, inbusy, outbusy, hfull, rdout = [Signal(bool(0)) for i in range(6)]
-            din, dout = [Signal(intbv(0)[DATA:]) for i in range(2)]
+            rst = ResetSignal(0, active=1, async=False)    
+            inclk, outclk,we, rd, inbusy, outbusy, hfull, rdout = [Signal(bool(0)) for i in range(8)]
             
-            fifo_inst = fifo(clk, inbusy, we, din, 
-                      outbusy, rd, dout, rdout, rst,
-                      ADDR=ADDR, DATA=DATA, OFFSET=OFFSET, LOWER=LOWER, UPPER=UPPER)
-            fifo_inst.convert(hdl='Verilog', name='fifo_' + str(ADDR)+'_'+ str(DATA)+'_'
-                          + str(OFFSET)+'_'+ str(LOWER)+'_'+ str(UPPER))
-            @always(delay(8))
-            def clkgen():
-                clk.next = not clk
+            fifo_inst = fifo(din, we, inbusy, inclk, rd, rdout, outbusy, dout, outclk, hfull, rst, DATA = DATA, ADDR =ADDR, UPPER =UPPER,LOWER =LOWER)
+         
+            #Clock driver for input
+            @always(delay(5))
+            def inclkgen(): 
+                inclk.next = not inclk
             
-            rambuff = createbuff(DATA, ADDR) 
-            
+            #Clock driver for output
+            @always(delay(5))
+            def outclkgen(): 
+                outclk.next = not outclk
+
+            fifobuff =[]
+            fifobuff =createbuff(DATA, 2*ADDR)
+            #Driver for reset signal
             @instance
             def stimulus():
-                yield delay(20)
+                yield delay(15)
                 rst.next = 1
-                yield delay(20)
+                yield delay(10)
                 rst.next = 0
-                yield delay(20)
+                yield delay(10)
                 
+            #Write driver for fifo    
             @instance
             def write():
-                we.next = Signal(bool(0))
-                yield delay(50)
-                
-                for data in rambuff:                        
-                    yield clk.posedge
-                    while inbusy:
-                        we.next = 0
-                        yield clk.posedge
-                        
-                    we.next = 1                    
-                    din.next = data                        
-                        
-                yield clk.posedge
                 we.next = 0
-                #din.next = 0
+                yield delay(50)
+                i = 0
+                while 1:
+                    yield inclk.posedge
+                    if not inbusy:
+                        we.next = 1
+                        din.next = fifobuff[i]
+                        i +=1
+                    else:
+                        we.next = 0
+                        din.next = 0
+                    if i == len(fifobuff):
+                        break
+                yield inclk.posedge
+                we.next = 0
                 
+            #Read driver for fifo
             @instance
             def read():
-                watchdog = 30
-                watchctr = 0
-                yield delay(250)
-                j = 0
-                while 1:
-                    yield clk.posedge
-                    if watchctr == watchdog:
-                        watchctr = 0
-                        break
+                rd.next = 0
+                yield outclk.posedge
+                while(hfull==0):
+                    yield outclk.posedge
+                    pass
+                yield outclk.posedge
+                rd.next = 1
+                i = 0
+                while(1):
+                    yield outclk.posedge
+                    if rdout:
+                        print(dout,fifobuff[i])                        
+                        i +=1;
                         
-                    if not outbusy:
-                        rd.next = Signal(bool(1))
-                    else:
-                        rd.next = Signal(bool(0))
-                        watchctr = watchctr + 1
-                        #print watchctr
-                        
-                    if (rdout):
-                        print hex(dout), hex(rambuff[j])
-                        #self.assertEqual(dout, rambuff[j])
-                        j = j + 1
-                        
-                yield clk.posedge
-                rd.next = Signal(bool(0))
+                yield outclk.posedge
+                rd.next = 0
                 
-                
+            @always_comb
+            def flag():
+                if inbusy:
+                    print("Overflow")
+                if outbusy:
+                    print("Underflow")
+                if hfull:
+                    print("Half full")
+                    
+                    
             return instances()
-        
-        
-        tb = tb_fifo()
-        tb.config_sim(trace=True)
-        tb.run_sim(duration=1500)
+            
+        tb = test_fifo()
+        tb.config_sim(trace= True)
+        tb.run_sim(duration=2000)
         tb.quit_sim()
-
+    
 if __name__ == '__main__':
     unittest.main()
