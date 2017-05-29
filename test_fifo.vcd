@@ -1,0 +1,2842 @@
+$date
+    Mon May 29 17:20:41 2017
+$end
+$version
+    MyHDL 1.0dev
+$end
+$timescale
+    1ns
+$end
+
+$scope module test_fifo $end
+$var reg 1 ! we $end
+$var reg 1 " rst $end
+$var reg 1 # rdout $end
+$var reg 1 $ rd $end
+$var reg 1 % outclk $end
+$var reg 1 & outbusy $end
+$var reg 1 ' inclk $end
+$var reg 1 ( inbusy $end
+$var reg 1 ) hfull $end
+$var reg 8 * dout $end
+$var reg 8 + din $end
+$scope module fifobuff $end
+$var real 1 , fifobuff(0) $end
+$var real 1 - fifobuff(1) $end
+$var real 1 . fifobuff(2) $end
+$var real 1 / fifobuff(3) $end
+$var real 1 0 fifobuff(4) $end
+$var real 1 1 fifobuff(5) $end
+$var real 1 2 fifobuff(6) $end
+$var real 1 3 fifobuff(7) $end
+$var real 1 4 fifobuff(8) $end
+$var real 1 5 fifobuff(9) $end
+$var real 1 6 fifobuff(10) $end
+$var real 1 7 fifobuff(11) $end
+$var real 1 8 fifobuff(12) $end
+$var real 1 9 fifobuff(13) $end
+$var real 1 : fifobuff(14) $end
+$var real 1 ; fifobuff(15) $end
+$var real 1 < fifobuff(16) $end
+$var real 1 = fifobuff(17) $end
+$var real 1 > fifobuff(18) $end
+$var real 1 ? fifobuff(19) $end
+$var real 1 @ fifobuff(20) $end
+$var real 1 A fifobuff(21) $end
+$var real 1 B fifobuff(22) $end
+$var real 1 C fifobuff(23) $end
+$var real 1 D fifobuff(24) $end
+$var real 1 E fifobuff(25) $end
+$var real 1 F fifobuff(26) $end
+$var real 1 G fifobuff(27) $end
+$var real 1 H fifobuff(28) $end
+$var real 1 I fifobuff(29) $end
+$var real 1 J fifobuff(30) $end
+$var real 1 K fifobuff(31) $end
+$var real 1 L fifobuff(32) $end
+$var real 1 M fifobuff(33) $end
+$var real 1 N fifobuff(34) $end
+$var real 1 O fifobuff(35) $end
+$var real 1 P fifobuff(36) $end
+$var real 1 Q fifobuff(37) $end
+$var real 1 R fifobuff(38) $end
+$var real 1 S fifobuff(39) $end
+$var real 1 T fifobuff(40) $end
+$var real 1 U fifobuff(41) $end
+$var real 1 V fifobuff(42) $end
+$var real 1 W fifobuff(43) $end
+$var real 1 X fifobuff(44) $end
+$var real 1 Y fifobuff(45) $end
+$var real 1 Z fifobuff(46) $end
+$var real 1 [ fifobuff(47) $end
+$var real 1 \ fifobuff(48) $end
+$var real 1 ] fifobuff(49) $end
+$var real 1 ^ fifobuff(50) $end
+$var real 1 _ fifobuff(51) $end
+$var real 1 ` fifobuff(52) $end
+$var real 1 a fifobuff(53) $end
+$var real 1 b fifobuff(54) $end
+$var real 1 c fifobuff(55) $end
+$var real 1 d fifobuff(56) $end
+$var real 1 e fifobuff(57) $end
+$var real 1 f fifobuff(58) $end
+$var real 1 g fifobuff(59) $end
+$var real 1 h fifobuff(60) $end
+$var real 1 i fifobuff(61) $end
+$var real 1 j fifobuff(62) $end
+$var real 1 k fifobuff(63) $end
+$var real 1 l fifobuff(64) $end
+$var real 1 m fifobuff(65) $end
+$var real 1 n fifobuff(66) $end
+$var real 1 o fifobuff(67) $end
+$var real 1 p fifobuff(68) $end
+$var real 1 q fifobuff(69) $end
+$var real 1 r fifobuff(70) $end
+$var real 1 s fifobuff(71) $end
+$var real 1 t fifobuff(72) $end
+$var real 1 u fifobuff(73) $end
+$var real 1 v fifobuff(74) $end
+$var real 1 w fifobuff(75) $end
+$var real 1 x fifobuff(76) $end
+$var real 1 y fifobuff(77) $end
+$var real 1 z fifobuff(78) $end
+$var real 1 { fifobuff(79) $end
+$var real 1 | fifobuff(80) $end
+$var real 1 } fifobuff(81) $end
+$var real 1 ~ fifobuff(82) $end
+$var real 1 "! fifobuff(83) $end
+$var real 1 "" fifobuff(84) $end
+$var real 1 "# fifobuff(85) $end
+$var real 1 "$ fifobuff(86) $end
+$var real 1 "% fifobuff(87) $end
+$var real 1 "& fifobuff(88) $end
+$var real 1 "' fifobuff(89) $end
+$var real 1 "( fifobuff(90) $end
+$var real 1 ") fifobuff(91) $end
+$var real 1 "* fifobuff(92) $end
+$var real 1 "+ fifobuff(93) $end
+$var real 1 ", fifobuff(94) $end
+$var real 1 "- fifobuff(95) $end
+$var real 1 ". fifobuff(96) $end
+$var real 1 "/ fifobuff(97) $end
+$var real 1 "0 fifobuff(98) $end
+$var real 1 "1 fifobuff(99) $end
+$var real 1 "2 fifobuff(100) $end
+$var real 1 "3 fifobuff(101) $end
+$var real 1 "4 fifobuff(102) $end
+$var real 1 "5 fifobuff(103) $end
+$var real 1 "6 fifobuff(104) $end
+$var real 1 "7 fifobuff(105) $end
+$var real 1 "8 fifobuff(106) $end
+$var real 1 "9 fifobuff(107) $end
+$var real 1 ": fifobuff(108) $end
+$var real 1 "; fifobuff(109) $end
+$var real 1 "< fifobuff(110) $end
+$var real 1 "= fifobuff(111) $end
+$var real 1 "> fifobuff(112) $end
+$var real 1 "? fifobuff(113) $end
+$var real 1 "@ fifobuff(114) $end
+$var real 1 "A fifobuff(115) $end
+$var real 1 "B fifobuff(116) $end
+$var real 1 "C fifobuff(117) $end
+$var real 1 "D fifobuff(118) $end
+$var real 1 "E fifobuff(119) $end
+$var real 1 "F fifobuff(120) $end
+$var real 1 "G fifobuff(121) $end
+$var real 1 "H fifobuff(122) $end
+$var real 1 "I fifobuff(123) $end
+$var real 1 "J fifobuff(124) $end
+$var real 1 "K fifobuff(125) $end
+$var real 1 "L fifobuff(126) $end
+$var real 1 "M fifobuff(127) $end
+$var real 1 "N fifobuff(128) $end
+$var real 1 "O fifobuff(129) $end
+$var real 1 "P fifobuff(130) $end
+$var real 1 "Q fifobuff(131) $end
+$var real 1 "R fifobuff(132) $end
+$var real 1 "S fifobuff(133) $end
+$var real 1 "T fifobuff(134) $end
+$var real 1 "U fifobuff(135) $end
+$var real 1 "V fifobuff(136) $end
+$var real 1 "W fifobuff(137) $end
+$var real 1 "X fifobuff(138) $end
+$var real 1 "Y fifobuff(139) $end
+$var real 1 "Z fifobuff(140) $end
+$var real 1 "[ fifobuff(141) $end
+$var real 1 "\ fifobuff(142) $end
+$var real 1 "] fifobuff(143) $end
+$var real 1 "^ fifobuff(144) $end
+$var real 1 "_ fifobuff(145) $end
+$var real 1 "` fifobuff(146) $end
+$var real 1 "a fifobuff(147) $end
+$var real 1 "b fifobuff(148) $end
+$var real 1 "c fifobuff(149) $end
+$var real 1 "d fifobuff(150) $end
+$var real 1 "e fifobuff(151) $end
+$var real 1 "f fifobuff(152) $end
+$var real 1 "g fifobuff(153) $end
+$var real 1 "h fifobuff(154) $end
+$var real 1 "i fifobuff(155) $end
+$var real 1 "j fifobuff(156) $end
+$var real 1 "k fifobuff(157) $end
+$var real 1 "l fifobuff(158) $end
+$var real 1 "m fifobuff(159) $end
+$var real 1 "n fifobuff(160) $end
+$var real 1 "o fifobuff(161) $end
+$var real 1 "p fifobuff(162) $end
+$var real 1 "q fifobuff(163) $end
+$var real 1 "r fifobuff(164) $end
+$var real 1 "s fifobuff(165) $end
+$var real 1 "t fifobuff(166) $end
+$var real 1 "u fifobuff(167) $end
+$var real 1 "v fifobuff(168) $end
+$var real 1 "w fifobuff(169) $end
+$var real 1 "x fifobuff(170) $end
+$var real 1 "y fifobuff(171) $end
+$var real 1 "z fifobuff(172) $end
+$var real 1 "{ fifobuff(173) $end
+$var real 1 "| fifobuff(174) $end
+$var real 1 "} fifobuff(175) $end
+$var real 1 "~ fifobuff(176) $end
+$var real 1 #! fifobuff(177) $end
+$var real 1 #" fifobuff(178) $end
+$var real 1 ## fifobuff(179) $end
+$var real 1 #$ fifobuff(180) $end
+$var real 1 #% fifobuff(181) $end
+$var real 1 #& fifobuff(182) $end
+$var real 1 #' fifobuff(183) $end
+$var real 1 #( fifobuff(184) $end
+$var real 1 #) fifobuff(185) $end
+$var real 1 #* fifobuff(186) $end
+$var real 1 #+ fifobuff(187) $end
+$var real 1 #, fifobuff(188) $end
+$var real 1 #- fifobuff(189) $end
+$var real 1 #. fifobuff(190) $end
+$var real 1 #/ fifobuff(191) $end
+$var real 1 #0 fifobuff(192) $end
+$var real 1 #1 fifobuff(193) $end
+$var real 1 #2 fifobuff(194) $end
+$var real 1 #3 fifobuff(195) $end
+$var real 1 #4 fifobuff(196) $end
+$var real 1 #5 fifobuff(197) $end
+$var real 1 #6 fifobuff(198) $end
+$var real 1 #7 fifobuff(199) $end
+$var real 1 #8 fifobuff(200) $end
+$var real 1 #9 fifobuff(201) $end
+$var real 1 #: fifobuff(202) $end
+$var real 1 #; fifobuff(203) $end
+$var real 1 #< fifobuff(204) $end
+$var real 1 #= fifobuff(205) $end
+$var real 1 #> fifobuff(206) $end
+$var real 1 #? fifobuff(207) $end
+$var real 1 #@ fifobuff(208) $end
+$var real 1 #A fifobuff(209) $end
+$var real 1 #B fifobuff(210) $end
+$var real 1 #C fifobuff(211) $end
+$var real 1 #D fifobuff(212) $end
+$var real 1 #E fifobuff(213) $end
+$var real 1 #F fifobuff(214) $end
+$var real 1 #G fifobuff(215) $end
+$var real 1 #H fifobuff(216) $end
+$var real 1 #I fifobuff(217) $end
+$var real 1 #J fifobuff(218) $end
+$var real 1 #K fifobuff(219) $end
+$var real 1 #L fifobuff(220) $end
+$var real 1 #M fifobuff(221) $end
+$var real 1 #N fifobuff(222) $end
+$var real 1 #O fifobuff(223) $end
+$var real 1 #P fifobuff(224) $end
+$var real 1 #Q fifobuff(225) $end
+$var real 1 #R fifobuff(226) $end
+$var real 1 #S fifobuff(227) $end
+$var real 1 #T fifobuff(228) $end
+$var real 1 #U fifobuff(229) $end
+$var real 1 #V fifobuff(230) $end
+$var real 1 #W fifobuff(231) $end
+$var real 1 #X fifobuff(232) $end
+$var real 1 #Y fifobuff(233) $end
+$var real 1 #Z fifobuff(234) $end
+$var real 1 #[ fifobuff(235) $end
+$var real 1 #\ fifobuff(236) $end
+$var real 1 #] fifobuff(237) $end
+$var real 1 #^ fifobuff(238) $end
+$var real 1 #_ fifobuff(239) $end
+$var real 1 #` fifobuff(240) $end
+$var real 1 #a fifobuff(241) $end
+$var real 1 #b fifobuff(242) $end
+$var real 1 #c fifobuff(243) $end
+$var real 1 #d fifobuff(244) $end
+$var real 1 #e fifobuff(245) $end
+$var real 1 #f fifobuff(246) $end
+$var real 1 #g fifobuff(247) $end
+$var real 1 #h fifobuff(248) $end
+$var real 1 #i fifobuff(249) $end
+$var real 1 #j fifobuff(250) $end
+$var real 1 #k fifobuff(251) $end
+$var real 1 #l fifobuff(252) $end
+$var real 1 #m fifobuff(253) $end
+$var real 1 #n fifobuff(254) $end
+$var real 1 #o fifobuff(255) $end
+$upscope $end
+$scope module fifo_1 $end
+$var reg 1 " rst $end
+$var reg 1 % outclk $end
+$var reg 1 ' inclk $end
+$var reg 1 ! we $end
+$var reg 1 # rdout $end
+$var reg 1 $ rd $end
+$var reg 1 & outbusy $end
+$var reg 5 #p out_addr $end
+$var reg 5 #q length $end
+$var reg 1 ( inbusy $end
+$var reg 5 #r in_addr $end
+$var reg 1 ) hfull $end
+$var reg 8 * dout $end
+$var reg 8 + din $end
+$var reg 1 #s diff $end
+$scope module mem $end
+$var reg 8 #t mem(0) $end
+$var reg 8 #u mem(1) $end
+$var reg 8 #v mem(2) $end
+$var reg 8 #w mem(3) $end
+$var reg 8 #x mem(4) $end
+$var reg 8 #y mem(5) $end
+$var reg 8 #z mem(6) $end
+$var reg 8 #{ mem(7) $end
+$var reg 8 #| mem(8) $end
+$var reg 8 #} mem(9) $end
+$var reg 8 #~ mem(10) $end
+$var reg 8 $! mem(11) $end
+$var reg 8 $" mem(12) $end
+$var reg 8 $# mem(13) $end
+$var reg 8 $$ mem(14) $end
+$var reg 8 $% mem(15) $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+0)
+b00000000 *
+b00000000 +
+s0x7b ,
+s0xaf -
+s0x95 .
+s0x13 /
+s0xb3 0
+s0x2b 1
+s0x8a 2
+s0x70 3
+s0x4e 4
+s0x80 5
+s0x4 6
+s0x95 7
+s0xa7 8
+s0x0 9
+s0xbf :
+s0xa7 ;
+s0x1f <
+s0x3e =
+s0x50 >
+s0xe6 ?
+s0xe8 @
+s0x98 A
+s0x7e B
+s0xc2 C
+s0xb0 D
+s0x15 E
+s0x60 F
+s0xdf G
+s0xd9 H
+s0x42 I
+s0x5 J
+s0xb5 K
+s0x6f L
+s0x15 M
+s0xcc N
+s0xb6 O
+s0x55 P
+s0xd4 Q
+s0x5d R
+s0x88 S
+s0x1b T
+s0x83 U
+s0x95 V
+s0x31 W
+s0x2b X
+s0x9d Y
+s0x71 Z
+s0x36 [
+s0x4c \
+s0x5f ]
+s0x92 ^
+s0x31 _
+s0x5 `
+s0x2 a
+s0x24 b
+s0x44 c
+s0x22 d
+s0x28 e
+s0x28 f
+s0xad g
+s0x8 h
+s0x19 i
+s0xc4 j
+s0x16 k
+s0x58 l
+s0x25 m
+s0xa4 n
+s0xb3 o
+s0xea p
+s0xab q
+s0x70 r
+s0xfd s
+s0xf1 t
+s0x62 u
+s0x51 v
+s0xbd w
+s0xbd x
+s0x5b y
+s0x6 z
+s0xc0 {
+s0x2b |
+s0xf }
+s0x74 ~
+s0x5b "!
+s0xac ""
+s0x69 "#
+s0x6 "$
+s0x15 "%
+s0xee "&
+s0xeb "'
+s0x4 "(
+s0xb9 ")
+s0x2e "*
+s0x3 "+
+s0x2e ",
+s0x2d "-
+s0xa3 ".
+s0x24 "/
+s0x2a "0
+s0x2e "1
+s0x98 "2
+s0x8b "3
+s0x74 "4
+s0x13 "5
+s0xd0 "6
+s0xd4 "7
+s0x91 "8
+s0x5f "9
+s0xb9 ":
+s0xe ";
+s0xfa "<
+s0xa "=
+s0x42 ">
+s0x88 "?
+s0x7b "@
+s0x9c "A
+s0x56 "B
+s0xd9 "C
+s0x5f "D
+s0x6a "E
+s0xde "F
+s0x95 "G
+s0x6c "H
+s0xbe "I
+s0xf6 "J
+s0x33 "K
+s0x4e "L
+s0x9c "M
+s0x84 "N
+s0x50 "O
+s0xea "P
+s0xbe "Q
+s0xba "R
+s0x77 "S
+s0xbf "T
+s0x41 "U
+s0xf9 "V
+s0x0 "W
+s0xd2 "X
+s0xd4 "Y
+s0x33 "Z
+s0xb "[
+s0x7a "\
+s0xde "]
+s0x1c "^
+s0x4d "_
+s0x69 "`
+s0x4a "a
+s0xd1 "b
+s0x46 "c
+s0x5c "d
+s0xe8 "e
+s0xe2 "f
+s0xe7 "g
+s0x48 "h
+s0xea "i
+s0x59 "j
+s0x2b "k
+s0xf3 "l
+s0x9a "m
+s0x23 "n
+s0x12 "o
+s0xe "p
+s0xcf "q
+s0xbf "r
+s0x8e "s
+s0xb6 "t
+s0x9d "u
+s0x6f "v
+s0x1 "w
+s0x18 "x
+s0x7a "y
+s0xfa "z
+s0xf2 "{
+s0x6a "|
+s0x8c "}
+s0x6c "~
+s0xc4 #!
+s0x9c #"
+s0xa3 ##
+s0x31 #$
+s0xaf #%
+s0xe2 #&
+s0x58 #'
+s0xad #(
+s0x56 #)
+s0xfc #*
+s0x61 #+
+s0xbb #,
+s0x5a #-
+s0xa6 #.
+s0x6c #/
+s0xa #0
+s0xc6 #1
+s0x94 #2
+s0x45 #3
+s0x61 #4
+s0xc4 #5
+s0xaa #6
+s0x3c #7
+s0x5a #8
+s0x7f #9
+s0x33 #:
+s0x3 #;
+s0x50 #<
+s0x7 #=
+s0x76 #>
+s0xc4 #?
+s0x9e #@
+s0x5b #A
+s0x1c #B
+s0x72 #C
+s0xb6 #D
+s0x49 #E
+s0xda #F
+s0xbf #G
+s0xd9 #H
+s0xf6 #I
+s0x28 #J
+s0x29 #K
+s0x3 #L
+s0x95 #M
+s0x90 #N
+s0xe9 #O
+s0xcf #P
+s0xc #Q
+s0xa5 #R
+s0x38 #S
+s0x49 #T
+s0x1b #U
+s0x3 #V
+s0xc3 #W
+s0x1 #X
+s0xc9 #Y
+s0x57 #Z
+s0xf3 #[
+s0x64 #\
+s0x98 #]
+s0xbc #^
+s0xd9 #_
+s0xf8 #`
+s0xcd #a
+s0x6f #b
+s0x1 #c
+s0x80 #d
+s0x44 #e
+s0xd6 #f
+s0x4a #g
+s0xd9 #h
+s0x12 #i
+s0x86 #j
+s0xf5 #k
+s0x7e #l
+s0x15 #m
+s0x92 #n
+s0x9e #o
+b00000 #p
+b00000 #q
+b00000 #r
+1#s
+b00000000 #t
+b00000000 #u
+b00000000 #v
+b00000000 #w
+b00000000 #x
+b00000000 #y
+b00000000 #z
+b00000000 #{
+b00000000 #|
+b00000000 #}
+b00000000 #~
+b00000000 $!
+b00000000 $"
+b00000000 $#
+b00000000 $$
+b00000000 $%
+$end
+1(
+b10000 #q
+0#s
+1&
+0(
+b00000 #q
+#5
+1'
+1%
+#10
+0%
+0'
+#15
+1'
+1%
+1"
+#20
+0%
+0'
+#25
+1'
+1%
+0"
+#30
+0%
+0'
+#35
+1'
+1%
+#40
+0%
+0'
+#45
+1'
+1%
+#50
+0%
+0'
+#55
+1'
+1%
+1!
+b01111011 +
+#60
+0%
+0'
+#65
+1'
+1%
+b01111011 #t
+b00001 #r
+b10101111 +
+0&
+b00001 #q
+#70
+0%
+0'
+#75
+1'
+1%
+b10010101 +
+b10101111 #u
+b00010 #r
+b00010 #q
+#80
+0%
+0'
+#85
+1'
+1%
+b10010101 #v
+b00011 #r
+b00010011 +
+b00011 #q
+#90
+0%
+0'
+#95
+1'
+1%
+b10110011 +
+b00010011 #w
+b00100 #r
+b00100 #q
+#100
+0%
+0'
+#105
+1'
+1%
+b10110011 #x
+b00101 #r
+b00101011 +
+b00101 #q
+#110
+0%
+0'
+#115
+1'
+1%
+b10001010 +
+b00101011 #y
+b00110 #r
+b00110 #q
+#120
+0%
+0'
+#125
+1'
+1%
+b10001010 #z
+b00111 #r
+b01110000 +
+b00111 #q
+#130
+0%
+0'
+#135
+1'
+1%
+b01001110 +
+b01110000 #{
+b01000 #r
+b01000 #q
+#140
+0%
+0'
+#145
+1'
+1%
+b01001110 #|
+b01001 #r
+b10000000 +
+b01001 #q
+#150
+0%
+0'
+#155
+1'
+1%
+b00000100 +
+b10000000 #}
+b01010 #r
+b01010 #q
+#160
+0%
+0'
+#165
+1'
+1%
+b00000100 #~
+b01011 #r
+b10010101 +
+b01011 #q
+#170
+0%
+0'
+#175
+1'
+1%
+b10100111 +
+b10010101 $!
+b01100 #r
+b01100 #q
+#180
+0%
+0'
+#185
+1'
+1%
+b10100111 $"
+b01101 #r
+b00000000 +
+b01101 #q
+#190
+0%
+0'
+#195
+1'
+1%
+1)
+b10111111 +
+b01110 #r
+b01110 #q
+#200
+0%
+0'
+#205
+1'
+1%
+b10111111 $$
+b01111 #r
+b10100111 +
+b01111 #q
+#210
+0%
+0'
+#215
+1'
+1%
+1$
+b00011111 +
+b10100111 $%
+b10000 #r
+1#s
+1&
+b00000 #q
+0&
+1(
+b10000 #q
+#220
+0%
+0'
+#225
+1'
+1%
+b01111011 *
+b00001 #p
+1#
+0!
+b00000000 +
+0(
+b01111 #q
+#230
+0%
+0'
+#235
+1'
+1%
+b10101111 *
+b00010 #p
+1!
+b00111110 +
+b01110 #q
+#240
+0%
+0'
+#245
+1'
+1%
+b10010101 *
+b00011 #p
+b00111110 #t
+b10001 #r
+b01010000 +
+#250
+0%
+0'
+#255
+1'
+1%
+b00010011 *
+b00100 #p
+b11100110 +
+b01010000 #u
+b10010 #r
+#260
+0%
+0'
+#265
+1'
+1%
+b10110011 *
+b00101 #p
+b11100110 #v
+b10011 #r
+b11101000 +
+#270
+0%
+0'
+#275
+1'
+1%
+b00101011 *
+b00110 #p
+b10011000 +
+b11101000 #w
+b10100 #r
+#280
+0%
+0'
+#285
+1'
+1%
+b10001010 *
+b00111 #p
+b10011000 #x
+b10101 #r
+b01111110 +
+#290
+0%
+0'
+#295
+1'
+1%
+b01110000 *
+b01000 #p
+b11000010 +
+b01111110 #y
+b10110 #r
+#300
+0%
+0'
+#305
+1'
+1%
+b01001110 *
+b01001 #p
+b11000010 #z
+b10111 #r
+b10110000 +
+#310
+0%
+0'
+#315
+1'
+1%
+b10000000 *
+b01010 #p
+b00010101 +
+b10110000 #{
+b11000 #r
+#320
+0%
+0'
+#325
+1'
+1%
+b00000100 *
+b01011 #p
+b00010101 #|
+b11001 #r
+b01100000 +
+#330
+0%
+0'
+#335
+1'
+1%
+b10010101 *
+b01100 #p
+b11011111 +
+b01100000 #}
+b11010 #r
+#340
+0%
+0'
+#345
+1'
+1%
+b10100111 *
+b01101 #p
+b11011111 #~
+b11011 #r
+b11011001 +
+#350
+0%
+0'
+#355
+1'
+1%
+b00000000 *
+b01110 #p
+b01000010 +
+b11011001 $!
+b11100 #r
+#360
+0%
+0'
+#365
+1'
+1%
+b10111111 *
+b01111 #p
+b01000010 $"
+b11101 #r
+b00000101 +
+#370
+0%
+0'
+#375
+1'
+1%
+b10100111 *
+b10000 #p
+b10110101 +
+b00000101 $#
+b11110 #r
+0#s
+b11110 #q
+b01110 #q
+#380
+0%
+0'
+#385
+1'
+1%
+b00111110 *
+b10001 #p
+b10110101 $$
+b11111 #r
+b01101111 +
+#390
+0%
+0'
+#395
+1'
+1%
+b01010000 *
+b10010 #p
+b00010101 +
+b01101111 $%
+b00000 #r
+1#s
+b11110 #q
+b01110 #q
+#400
+0%
+0'
+#405
+1'
+1%
+b11100110 *
+b10011 #p
+b00010101 #t
+b00001 #r
+b11001100 +
+#410
+0%
+0'
+#415
+1'
+1%
+b11101000 *
+b10100 #p
+b10110110 +
+b11001100 #u
+b00010 #r
+#420
+0%
+0'
+#425
+1'
+1%
+b10011000 *
+b10101 #p
+b10110110 #v
+b00011 #r
+b01010101 +
+#430
+0%
+0'
+#435
+1'
+1%
+b01111110 *
+b10110 #p
+b11010100 +
+b01010101 #w
+b00100 #r
+#440
+0%
+0'
+#445
+1'
+1%
+b11000010 *
+b10111 #p
+b11010100 #x
+b00101 #r
+b01011101 +
+#450
+0%
+0'
+#455
+1'
+1%
+b10110000 *
+b11000 #p
+b10001000 +
+b01011101 #y
+b00110 #r
+#460
+0%
+0'
+#465
+1'
+1%
+b00010101 *
+b11001 #p
+b10001000 #z
+b00111 #r
+b00011011 +
+#470
+0%
+0'
+#475
+1'
+1%
+b01100000 *
+b11010 #p
+b10000011 +
+b00011011 #{
+b01000 #r
+#480
+0%
+0'
+#485
+1'
+1%
+b11011111 *
+b11011 #p
+b10000011 #|
+b01001 #r
+b10010101 +
+#490
+0%
+0'
+#495
+1'
+1%
+b11011001 *
+b11100 #p
+b00110001 +
+b10010101 #}
+b01010 #r
+#500
+0%
+0'
+#505
+1'
+1%
+b01000010 *
+b11101 #p
+b00110001 #~
+b01011 #r
+b00101011 +
+#510
+0%
+0'
+#515
+1'
+1%
+b00000101 *
+b11110 #p
+b10011101 +
+b00101011 $!
+b01100 #r
+#520
+0%
+0'
+#525
+1'
+1%
+b10110101 *
+b11111 #p
+b10011101 $"
+b01101 #r
+b01110001 +
+#530
+0%
+0'
+#535
+1'
+1%
+b01101111 *
+b00000 #p
+b00110110 +
+b01110001 $#
+b01110 #r
+0#s
+b11110 #q
+b01110 #q
+#540
+0%
+0'
+#545
+1'
+1%
+b00010101 *
+b00001 #p
+b00110110 $$
+b01111 #r
+b01001100 +
+#550
+0%
+0'
+#555
+1'
+1%
+b11001100 *
+b00010 #p
+b01011111 +
+b01001100 $%
+b10000 #r
+1#s
+b11110 #q
+b01110 #q
+#560
+0%
+0'
+#565
+1'
+1%
+b10110110 *
+b00011 #p
+b01011111 #t
+b10001 #r
+b10010010 +
+#570
+0%
+0'
+#575
+1'
+1%
+b01010101 *
+b00100 #p
+b00110001 +
+b10010010 #u
+b10010 #r
+#580
+0%
+0'
+#585
+1'
+1%
+b11010100 *
+b00101 #p
+b00110001 #v
+b10011 #r
+b00000101 +
+#590
+0%
+0'
+#595
+1'
+1%
+b01011101 *
+b00110 #p
+b00000010 +
+b00000101 #w
+b10100 #r
+#600
+0%
+0'
+#605
+1'
+1%
+b10001000 *
+b00111 #p
+b00000010 #x
+b10101 #r
+b00100100 +
+#610
+0%
+0'
+#615
+1'
+1%
+b00011011 *
+b01000 #p
+b01000100 +
+b00100100 #y
+b10110 #r
+#620
+0%
+0'
+#625
+1'
+1%
+b10000011 *
+b01001 #p
+b01000100 #z
+b10111 #r
+b00100010 +
+#630
+0%
+0'
+#635
+1'
+1%
+b10010101 *
+b01010 #p
+b00101000 +
+b00100010 #{
+b11000 #r
+#640
+0%
+0'
+#645
+1'
+1%
+b00110001 *
+b01011 #p
+b00101000 #|
+b11001 #r
+#650
+0%
+0'
+#655
+1'
+1%
+b00101011 *
+b01100 #p
+b10101101 +
+b00101000 #}
+b11010 #r
+#660
+0%
+0'
+#665
+1'
+1%
+b10011101 *
+b01101 #p
+b10101101 #~
+b11011 #r
+b00001000 +
+#670
+0%
+0'
+#675
+1'
+1%
+b01110001 *
+b01110 #p
+b00011001 +
+b00001000 $!
+b11100 #r
+#680
+0%
+0'
+#685
+1'
+1%
+b00110110 *
+b01111 #p
+b00011001 $"
+b11101 #r
+b11000100 +
+#690
+0%
+0'
+#695
+1'
+1%
+b01001100 *
+b10000 #p
+b00010110 +
+b11000100 $#
+b11110 #r
+0#s
+b11110 #q
+b01110 #q
+#700
+0%
+0'
+#705
+1'
+1%
+b01011111 *
+b10001 #p
+b00010110 $$
+b11111 #r
+b01011000 +
+#710
+0%
+0'
+#715
+1'
+1%
+b10010010 *
+b10010 #p
+b00100101 +
+b01011000 $%
+b00000 #r
+1#s
+b11110 #q
+b01110 #q
+#720
+0%
+0'
+#725
+1'
+1%
+b00110001 *
+b10011 #p
+b00100101 #t
+b00001 #r
+b10100100 +
+#730
+0%
+0'
+#735
+1'
+1%
+b00000101 *
+b10100 #p
+b10110011 +
+b10100100 #u
+b00010 #r
+#740
+0%
+0'
+#745
+1'
+1%
+b00000010 *
+b10101 #p
+b10110011 #v
+b00011 #r
+b11101010 +
+#750
+0%
+0'
+#755
+1'
+1%
+b00100100 *
+b10110 #p
+b10101011 +
+b11101010 #w
+b00100 #r
+#760
+0%
+0'
+#765
+1'
+1%
+b01000100 *
+b10111 #p
+b10101011 #x
+b00101 #r
+b01110000 +
+#770
+0%
+0'
+#775
+1'
+1%
+b00100010 *
+b11000 #p
+b11111101 +
+b01110000 #y
+b00110 #r
+#780
+0%
+0'
+#785
+1'
+1%
+b00101000 *
+b11001 #p
+b11111101 #z
+b00111 #r
+b11110001 +
+#790
+0%
+0'
+#795
+1'
+1%
+b11010 #p
+b01100010 +
+b11110001 #{
+b01000 #r
+#800
+0%
+0'
+#805
+1'
+1%
+b10101101 *
+b11011 #p
+b01100010 #|
+b01001 #r
+b01010001 +
+#810
+0%
+0'
+#815
+1'
+1%
+b00001000 *
+b11100 #p
+b10111101 +
+b01010001 #}
+b01010 #r
+#820
+0%
+0'
+#825
+1'
+1%
+b00011001 *
+b11101 #p
+b10111101 #~
+b01011 #r
+#830
+0%
+0'
+#835
+1'
+1%
+b11000100 *
+b11110 #p
+b01011011 +
+b10111101 $!
+b01100 #r
+#840
+0%
+0'
+#845
+1'
+1%
+b00010110 *
+b11111 #p
+b01011011 $"
+b01101 #r
+b00000110 +
+#850
+0%
+0'
+#855
+1'
+1%
+b01011000 *
+b00000 #p
+b11000000 +
+b00000110 $#
+b01110 #r
+0#s
+b11110 #q
+b01110 #q
+#860
+0%
+0'
+#865
+1'
+1%
+b00100101 *
+b00001 #p
+b11000000 $$
+b01111 #r
+b00101011 +
+#870
+0%
+0'
+#875
+1'
+1%
+b10100100 *
+b00010 #p
+b00001111 +
+b00101011 $%
+b10000 #r
+1#s
+b11110 #q
+b01110 #q
+#880
+0%
+0'
+#885
+1'
+1%
+b10110011 *
+b00011 #p
+b00001111 #t
+b10001 #r
+b01110100 +
+#890
+0%
+0'
+#895
+1'
+1%
+b11101010 *
+b00100 #p
+b01011011 +
+b01110100 #u
+b10010 #r
+#900
+0%
+0'
+#905
+1'
+1%
+b10101011 *
+b00101 #p
+b01011011 #v
+b10011 #r
+b10101100 +
+#910
+0%
+0'
+#915
+1'
+1%
+b01110000 *
+b00110 #p
+b01101001 +
+b10101100 #w
+b10100 #r
+#920
+0%
+0'
+#925
+1'
+1%
+b11111101 *
+b00111 #p
+b01101001 #x
+b10101 #r
+b00000110 +
+#930
+0%
+0'
+#935
+1'
+1%
+b11110001 *
+b01000 #p
+b00010101 +
+b00000110 #y
+b10110 #r
+#940
+0%
+0'
+#945
+1'
+1%
+b01100010 *
+b01001 #p
+b00010101 #z
+b10111 #r
+b11101110 +
+#950
+0%
+0'
+#955
+1'
+1%
+b01010001 *
+b01010 #p
+b11101011 +
+b11101110 #{
+b11000 #r
+#960
+0%
+0'
+#965
+1'
+1%
+b10111101 *
+b01011 #p
+b11101011 #|
+b11001 #r
+b00000100 +
+#970
+0%
+0'
+#975
+1'
+1%
+b01100 #p
+b10111001 +
+b00000100 #}
+b11010 #r
+#980
+0%
+0'
+#985
+1'
+1%
+b01011011 *
+b01101 #p
+b10111001 #~
+b11011 #r
+b00101110 +
+#990
+0%
+0'
+#995
+1'
+1%
+b00000110 *
+b01110 #p
+b00000011 +
+b00101110 $!
+b11100 #r
+#1000
+0%
+0'
+#1005
+1'
+1%
+b11000000 *
+b01111 #p
+b00000011 $"
+b11101 #r
+b00101110 +
+#1010
+0%
+0'
+#1015
+1'
+1%
+b00101011 *
+b10000 #p
+b00101101 +
+b00101110 $#
+b11110 #r
+0#s
+b11110 #q
+b01110 #q
+#1020
+0%
+0'
+#1025
+1'
+1%
+b00001111 *
+b10001 #p
+b00101101 $$
+b11111 #r
+b10100011 +
+#1030
+0%
+0'
+#1035
+1'
+1%
+b01110100 *
+b10010 #p
+b00100100 +
+b10100011 $%
+b00000 #r
+1#s
+b11110 #q
+b01110 #q
+#1040
+0%
+0'
+#1045
+1'
+1%
+b01011011 *
+b10011 #p
+b00100100 #t
+b00001 #r
+b00101010 +
+#1050
+0%
+0'
+#1055
+1'
+1%
+b10101100 *
+b10100 #p
+b00101110 +
+b00101010 #u
+b00010 #r
+#1060
+0%
+0'
+#1065
+1'
+1%
+b01101001 *
+b10101 #p
+b00101110 #v
+b00011 #r
+b10011000 +
+#1070
+0%
+0'
+#1075
+1'
+1%
+b00000110 *
+b10110 #p
+b10001011 +
+b10011000 #w
+b00100 #r
+#1080
+0%
+0'
+#1085
+1'
+1%
+b00010101 *
+b10111 #p
+b10001011 #x
+b00101 #r
+b01110100 +
+#1090
+0%
+0'
+#1095
+1'
+1%
+b11101110 *
+b11000 #p
+b00010011 +
+b01110100 #y
+b00110 #r
+#1100
+0%
+0'
+#1105
+1'
+1%
+b11101011 *
+b11001 #p
+b00010011 #z
+b00111 #r
+b11010000 +
+#1110
+0%
+0'
+#1115
+1'
+1%
+b00000100 *
+b11010 #p
+b11010100 +
+b11010000 #{
+b01000 #r
+#1120
+0%
+0'
+#1125
+1'
+1%
+b10111001 *
+b11011 #p
+b11010100 #|
+b01001 #r
+b10010001 +
+#1130
+0%
+0'
+#1135
+1'
+1%
+b00101110 *
+b11100 #p
+b01011111 +
+b10010001 #}
+b01010 #r
+#1140
+0%
+0'
+#1145
+1'
+1%
+b00000011 *
+b11101 #p
+b01011111 #~
+b01011 #r
+b10111001 +
+#1150
+0%
+0'
+#1155
+1'
+1%
+b00101110 *
+b11110 #p
+b00001110 +
+b10111001 $!
+b01100 #r
+#1160
+0%
+0'
+#1165
+1'
+1%
+b00101101 *
+b11111 #p
+b00001110 $"
+b01101 #r
+b11111010 +
+#1170
+0%
+0'
+#1175
+1'
+1%
+b10100011 *
+b00000 #p
+b00001010 +
+b11111010 $#
+b01110 #r
+0#s
+b11110 #q
+b01110 #q
+#1180
+0%
+0'
+#1185
+1'
+1%
+b00100100 *
+b00001 #p
+b00001010 $$
+b01111 #r
+b01000010 +
+#1190
+0%
+0'
+#1195
+1'
+1%
+b00101010 *
+b00010 #p
+b10001000 +
+b01000010 $%
+b10000 #r
+1#s
+b11110 #q
+b01110 #q
+#1200
+0%
+0'
+#1205
+1'
+1%
+b00101110 *
+b00011 #p
+b10001000 #t
+b10001 #r
+b01111011 +
+#1210
+0%
+0'
+#1215
+1'
+1%
+b10011000 *
+b00100 #p
+b10011100 +
+b01111011 #u
+b10010 #r
+#1220
+0%
+0'
+#1225
+1'
+1%
+b10001011 *
+b00101 #p
+b10011100 #v
+b10011 #r
+b01010110 +
+#1230
+0%
+0'
+#1235
+1'
+1%
+b01110100 *
+b00110 #p
+b11011001 +
+b01010110 #w
+b10100 #r
+#1240
+0%
+0'
+#1245
+1'
+1%
+b00010011 *
+b00111 #p
+b11011001 #x
+b10101 #r
+b01011111 +
+#1250
+0%
+0'
+#1255
+1'
+1%
+b11010000 *
+b01000 #p
+b01101010 +
+b01011111 #y
+b10110 #r
+#1260
+0%
+0'
+#1265
+1'
+1%
+b11010100 *
+b01001 #p
+b01101010 #z
+b10111 #r
+b11011110 +
+#1270
+0%
+0'
+#1275
+1'
+1%
+b10010001 *
+b01010 #p
+b10010101 +
+b11011110 #{
+b11000 #r
+#1280
+0%
+0'
+#1285
+1'
+1%
+b01011111 *
+b01011 #p
+b10010101 #|
+b11001 #r
+b01101100 +
+#1290
+0%
+0'
+#1295
+1'
+1%
+b10111001 *
+b01100 #p
+b10111110 +
+b01101100 #}
+b11010 #r
+#1300
+0%
+0'
+#1305
+1'
+1%
+b00001110 *
+b01101 #p
+b10111110 #~
+b11011 #r
+b11110110 +
+#1310
+0%
+0'
+#1315
+1'
+1%
+b11111010 *
+b01110 #p
+b00110011 +
+b11110110 $!
+b11100 #r
+#1320
+0%
+0'
+#1325
+1'
+1%
+b00001010 *
+b01111 #p
+b00110011 $"
+b11101 #r
+b01001110 +
+#1330
+0%
+0'
+#1335
+1'
+1%
+b01000010 *
+b10000 #p
+b10011100 +
+b01001110 $#
+b11110 #r
+0#s
+b11110 #q
+b01110 #q
+#1340
+0%
+0'
+#1345
+1'
+1%
+b10001000 *
+b10001 #p
+b10011100 $$
+b11111 #r
+b10000100 +
+#1350
+0%
+0'
+#1355
+1'
+1%
+b01111011 *
+b10010 #p
+b01010000 +
+b10000100 $%
+b00000 #r
+1#s
+b11110 #q
+b01110 #q
+#1360
+0%
+0'
+#1365
+1'
+1%
+b10011100 *
+b10011 #p
+b01010000 #t
+b00001 #r
+b11101010 +
+#1370
+0%
+0'
+#1375
+1'
+1%
+b01010110 *
+b10100 #p
+b10111110 +
+b11101010 #u
+b00010 #r
+#1380
+0%
+0'
+#1385
+1'
+1%
+b11011001 *
+b10101 #p
+b10111110 #v
+b00011 #r
+b10111010 +
+#1390
+0%
+0'
+#1395
+1'
+1%
+b01011111 *
+b10110 #p
+b01110111 +
+b10111010 #w
+b00100 #r
+#1400
+0%
+0'
+#1405
+1'
+1%
+b01101010 *
+b10111 #p
+b01110111 #x
+b00101 #r
+b10111111 +
+#1410
+0%
+0'
+#1415
+1'
+1%
+b11011110 *
+b11000 #p
+b01000001 +
+b10111111 #y
+b00110 #r
+#1420
+0%
+0'
+#1425
+1'
+1%
+b10010101 *
+b11001 #p
+b01000001 #z
+b00111 #r
+b11111001 +
+#1430
+0%
+0'
+#1435
+1'
+1%
+b01101100 *
+b11010 #p
+b00000000 +
+b11111001 #{
+b01000 #r
+#1440
+0%
+0'
+#1445
+1'
+1%
+b10111110 *
+b11011 #p
+b00000000 #|
+b01001 #r
+b11010010 +
+#1450
+0%
+0'
+#1455
+1'
+1%
+b11110110 *
+b11100 #p
+b11010100 +
+b11010010 #}
+b01010 #r
+#1460
+0%
+0'
+#1465
+1'
+1%
+b00110011 *
+b11101 #p
+b11010100 #~
+b01011 #r
+b00110011 +
+#1470
+0%
+0'
+#1475
+1'
+1%
+b01001110 *
+b11110 #p
+b00001011 +
+b00110011 $!
+b01100 #r
+#1480
+0%
+0'
+#1485
+1'
+1%
+b10011100 *
+b11111 #p
+b00001011 $"
+b01101 #r
+b01111010 +
+#1490
+0%
+0'
+#1495
+1'
+1%
+b10000100 *
+b00000 #p
+b11011110 +
+b01111010 $#
+b01110 #r
+0#s
+b11110 #q
+b01110 #q
+#1500
+0%
+0'
+#1505
+1'
+1%
+b01010000 *
+b00001 #p
+b11011110 $$
+b01111 #r
+b00011100 +
+#1510
+0%
+0'
+#1515
+1'
+1%
+b11101010 *
+b00010 #p
+b01001101 +
+b00011100 $%
+b10000 #r
+1#s
+b11110 #q
+b01110 #q
+#1520
+0%
+0'
+#1525
+1'
+1%
+b10111110 *
+b00011 #p
+b01001101 #t
+b10001 #r
+b01101001 +
+#1530
+0%
+0'
+#1535
+1'
+1%
+b10111010 *
+b00100 #p
+b01001010 +
+b01101001 #u
+b10010 #r
+#1540
+0%
+0'
+#1545
+1'
+1%
+b01110111 *
+b00101 #p
+b01001010 #v
+b10011 #r
+b11010001 +
+#1550
+0%
+0'
+#1555
+1'
+1%
+b10111111 *
+b00110 #p
+b01000110 +
+b11010001 #w
+b10100 #r
+#1560
+0%
+0'
+#1565
+1'
+1%
+b01000001 *
+b00111 #p
+b01000110 #x
+b10101 #r
+b01011100 +
+#1570
+0%
+0'
+#1575
+1'
+1%
+b11111001 *
+b01000 #p
+b11101000 +
+b01011100 #y
+b10110 #r
+#1580
+0%
+0'
+#1585
+1'
+1%
+b00000000 *
+b01001 #p
+b11101000 #z
+b10111 #r
+b11100010 +
+#1590
+0%
+0'
+#1595
+1'
+1%
+b11010010 *
+b01010 #p
+b11100111 +
+b11100010 #{
+b11000 #r
+#1600
+0%
+0'
+#1605
+1'
+1%
+b11010100 *
+b01011 #p
+b11100111 #|
+b11001 #r
+b01001000 +
+#1610
+0%
+0'
+#1615
+1'
+1%
+b00110011 *
+b01100 #p
+b11101010 +
+b01001000 #}
+b11010 #r
+#1620
+0%
+0'
+#1625
+1'
+1%
+b00001011 *
+b01101 #p
+b11101010 #~
+b11011 #r
+b01011001 +
+#1630
+0%
+0'
+#1635
+1'
+1%
+b01111010 *
+b01110 #p
+b00101011 +
+b01011001 $!
+b11100 #r
+#1640
+0%
+0'
+#1645
+1'
+1%
+b11011110 *
+b01111 #p
+b00101011 $"
+b11101 #r
+b11110011 +
+#1650
+0%
+0'
+#1655
+1'
+1%
+b00011100 *
+b10000 #p
+b10011010 +
+b11110011 $#
+b11110 #r
+0#s
+b11110 #q
+b01110 #q
+#1660
+0%
+0'
+#1665
+1'
+1%
+b01001101 *
+b10001 #p
+b10011010 $$
+b11111 #r
+b00100011 +
+#1670
+0%
+0'
+#1675
+1'
+1%
+b01101001 *
+b10010 #p
+b00010010 +
+b00100011 $%
+b00000 #r
+1#s
+b11110 #q
+b01110 #q
+#1680
+0%
+0'
+#1685
+1'
+1%
+b01001010 *
+b10011 #p
+b00010010 #t
+b00001 #r
+b00001110 +
+#1690
+0%
+0'
+#1695
+1'
+1%
+b11010001 *
+b10100 #p
+b11001111 +
+b00001110 #u
+b00010 #r
+#1700
+0%
+0'
+#1705
+1'
+1%
+b01000110 *
+b10101 #p
+b11001111 #v
+b00011 #r
+b10111111 +
+#1710
+0%
+0'
+#1715
+1'
+1%
+b01011100 *
+b10110 #p
+b10001110 +
+b10111111 #w
+b00100 #r
+#1720
+0%
+0'
+#1725
+1'
+1%
+b11101000 *
+b10111 #p
+b10001110 #x
+b00101 #r
+b10110110 +
+#1730
+0%
+0'
+#1735
+1'
+1%
+b11100010 *
+b11000 #p
+b10011101 +
+b10110110 #y
+b00110 #r
+#1740
+0%
+0'
+#1745
+1'
+1%
+b11100111 *
+b11001 #p
+b10011101 #z
+b00111 #r
+b01101111 +
+#1750
+0%
+0'
+#1755
+1'
+1%
+b01001000 *
+b11010 #p
+b00000001 +
+b01101111 #{
+b01000 #r
+#1760
+0%
+0'
+#1765
+1'
+1%
+b11101010 *
+b11011 #p
+b00000001 #|
+b01001 #r
+b00011000 +
+#1770
+0%
+0'
+#1775
+1'
+1%
+b01011001 *
+b11100 #p
+b01111010 +
+b00011000 #}
+b01010 #r
+#1780
+0%
+0'
+#1785
+1'
+1%
+b00101011 *
+b11101 #p
+b01111010 #~
+b01011 #r
+b11111010 +
+#1790
+0%
+0'
+#1795
+1'
+1%
+b11110011 *
+b11110 #p
+b11110010 +
+b11111010 $!
+b01100 #r
+#1800
+0%
+0'
+#1805
+1'
+1%
+b10011010 *
+b11111 #p
+b11110010 $"
+b01101 #r
+b01101010 +
+#1810
+0%
+0'
+#1815
+1'
+1%
+b00100011 *
+b00000 #p
+b10001100 +
+b01101010 $#
+b01110 #r
+0#s
+b11110 #q
+b01110 #q
+#1820
+0%
+0'
+#1825
+1'
+1%
+b00010010 *
+b00001 #p
+b10001100 $$
+b01111 #r
+b01101100 +
+#1830
+0%
+0'
+#1835
+1'
+1%
+b00001110 *
+b00010 #p
+b11000100 +
+b01101100 $%
+b10000 #r
+1#s
+b11110 #q
+b01110 #q
+#1840
+0%
+0'
+#1845
+1'
+1%
+b11001111 *
+b00011 #p
+b11000100 #t
+b10001 #r
+b10011100 +
+#1850
+0%
+0'
+#1855
+1'
+1%
+b10111111 *
+b00100 #p
+b10100011 +
+b10011100 #u
+b10010 #r
+#1860
+0%
+0'
+#1865
+1'
+1%
+b10001110 *
+b00101 #p
+b10100011 #v
+b10011 #r
+b00110001 +
+#1870
+0%
+0'
+#1875
+1'
+1%
+b10110110 *
+b00110 #p
+b10101111 +
+b00110001 #w
+b10100 #r
+#1880
+0%
+0'
+#1885
+1'
+1%
+b10011101 *
+b00111 #p
+b10101111 #x
+b10101 #r
+b11100010 +
+#1890
+0%
+0'
+#1895
+1'
+1%
+b01101111 *
+b01000 #p
+b01011000 +
+b11100010 #y
+b10110 #r
+#1900
+0%
+0'
+#1905
+1'
+1%
+b00000001 *
+b01001 #p
+b01011000 #z
+b10111 #r
+b10101101 +
+#1910
+0%
+0'
+#1915
+1'
+1%
+b00011000 *
+b01010 #p
+b01010110 +
+b10101101 #{
+b11000 #r
+#1920
+0%
+0'
+#1925
+1'
+1%
+b01111010 *
+b01011 #p
+b01010110 #|
+b11001 #r
+b11111100 +
+#1930
+0%
+0'
+#1935
+1'
+1%
+b11111010 *
+b01100 #p
+b01100001 +
+b11111100 #}
+b11010 #r
+#1940
+0%
+0'
+#1945
+1'
+1%
+b11110010 *
+b01101 #p
+b01100001 #~
+b11011 #r
+b10111011 +
+#1950
+0%
+0'
+#1955
+1'
+1%
+b01101010 *
+b01110 #p
+b01011010 +
+b10111011 $!
+b11100 #r
+#1960
+0%
+0'
+#1965
+1'
+1%
+b10001100 *
+b01111 #p
+b01011010 $"
+b11101 #r
+b10100110 +
+#1970
+0%
+0'
+#1975
+1'
+1%
+b01101100 *
+b10000 #p
+b01101100 +
+b10100110 $#
+b11110 #r
+0#s
+b11110 #q
+b01110 #q
+#1980
+0%
+0'
+#1985
+1'
+1%
+b11000100 *
+b10001 #p
+b01101100 $$
+b11111 #r
+b00001010 +
+#1990
+0%
+0'
+#1995
+1'
+1%
+b10011100 *
+b10010 #p
+b11000110 +
+b00001010 $%
+b00000 #r
+1#s
+b11110 #q
+b01110 #q
+#2000
+0%
+0'
